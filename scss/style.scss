@@ -1,0 +1,41 @@
+@import "_nullstyle.scss";
+@import "_header.scss";
+@import "_show.scss";
+@import "_shop.scss";
+@import "_form.scss";
+@import "_basket.scss";
+@import "_footer.scss";
+
+
+
+html {
+    scroll-behavior: smooth;  
+}
+body {
+    background-color: rgb(177, 215, 63);
+}
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+}
+main {
+    // padding-top: clamp(0rem, calc(-2.37rem + 11.85vw), 8rem);  //128px;
+    padding-top: 80px;
+    flex: 1 1 auto;
+}
+img { 
+    max-width: 100%; 
+    }
+.container {
+    max-width: 1430px;
+    margin: 0 auto;
+    overflow-x: hidden; 
+    min-height: 100%;
+    padding: 10px 15px;
+}
+button {
+    transition: 0.2s;
+}

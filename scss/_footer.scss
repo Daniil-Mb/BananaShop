@@ -1,0 +1,11 @@
+.footer{
+    background-color: #fff;
+    display: flex;
+    &__text {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 50px;
+        color: #005FA3;
+    }
+}

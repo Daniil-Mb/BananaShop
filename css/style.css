@@ -1,0 +1,333 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: #000;
+}
+
+.header {
+  position: fixed;
+  z-index: 2000;
+  background-color: none;
+  top: 0px;
+  width: 100%;
+  background-color: rgb(177, 215, 63);
+  opacity: 90%;
+}
+.header_cap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__name {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 50px;
+  color: #005FA3;
+}
+.header__logo {
+  width: 80px;
+  height: auto;
+}
+.header_button {
+  background: #FFF;
+  color: #0962E8;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.header_button:hover {
+  background: #e0e0e0;
+}
+
+.show {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.show_cart {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  background: #ffc9c9;
+  border-radius: 20px;
+  padding: 10px;
+}
+.show_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+.show_title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 50px;
+  color: #005FA3;
+}
+.show_text {
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 50px;
+  color: #005FA3;
+}
+
+.shop {
+  margin: 40px 0 60px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.shop_cart {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  background: #ffc9c9;
+  border-radius: 20px;
+  padding: 10px;
+}
+.shop_product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.shop_name {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 20px;
+  color: #005FA3;
+}
+.shop_price {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 50px;
+  color: #005FA3;
+}
+.shop_link {
+  width: 100%;
+}
+.shop_button {
+  width: 100%;
+  background: #FFF;
+  color: #0962E8;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.shop_button:hover {
+  background: #e0e0e0;
+}
+
+.form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f1f1f1;
+  background-color: rgb(255, 200, 0);
+  border-radius: 20px;
+  z-index: 900;
+  width: 50%; /* занимает 50% общей ширины */
+  text-align: center;
+  padding: 10px;
+}
+.form_topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.form_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.form_input-box {
+  height: 50px; /* по сути задаем высоту input'а */
+  width: 100%; /* ширина на всю ширину правой колонки (с учетом padding) */
+  margin-bottom: 20px; /* отступаем снизу 20px */
+}
+.form_input-box input {
+  height: 100%; /* растягиваем на всю высоту контейнера 50px */
+  width: 100%; /* растягиваем на всю ширину */
+  border: none; /* убираем внешние края */
+  border-radius: 5px; /* скругляем края */
+  background: #f0f1f8; /* задаем цвет фона */
+  padding: 0 20px; /* отступ справа и слева 20px */
+}
+.form_button {
+  color: #fff;
+  font-size: 18px;
+  background: #ba1735;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+.form_button:hover {
+  background: #afafb6;
+}
+
+.basket {
+  max-width: 810px;
+  margin: auto;
+}
+.basket_head {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.basket_appellation {
+  width: 150px;
+}
+.basket_records {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.basket_data {
+  width: 150px;
+}
+
+.footer {
+  background-color: #fff;
+  display: flex;
+}
+.footer__text {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 50px;
+  color: #005FA3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(177, 215, 63);
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  padding-top: 80px;
+  flex: 1 1 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1430px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  min-height: 100%;
+  padding: 10px 15px;
+}
+
+button {
+  transition: 0.2s;
+}

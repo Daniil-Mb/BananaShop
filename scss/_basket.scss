@@ -1,0 +1,20 @@
+.basket {
+    max-width: 810px;
+    margin: auto;
+    &_head {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    &_appellation {
+        width: 150px;
+    }
+    &_records {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    &_data {
+        width: 150px;
+    }
+}

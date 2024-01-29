@@ -1,0 +1,51 @@
+.form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f1f1f1;
+  background-color: rgb(255, 200, 0);
+  border-radius: 20px;
+  z-index: 900;
+  width: 50%; /* занимает 50% общей ширины */
+  text-align: center;
+  padding: 10px;
+  &_topic-text {
+      font-size: 23px;
+      font-weight: 600;
+      margin-bottom: 10px;
+  }
+  &_flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+  &_input-box {
+      height: 50px; /* по сути задаем высоту input'а */
+      width: 100%; /* ширина на всю ширину правой колонки (с учетом padding) */
+      margin-bottom: 20px; /* отступаем снизу 20px */
+    }
+  &_input-box input{
+      height: 100%; /* растягиваем на всю высоту контейнера 50px */
+      width: 100%; /* растягиваем на всю ширину */
+      border: none; /* убираем внешние края */
+      border-radius: 5px; /* скругляем края */
+      background: #f0f1f8; /* задаем цвет фона */
+      padding: 0 20px; /* отступ справа и слева 20px */
+  }
+  &_button {
+      color: #fff;
+      font-size: 18px;
+      background: #ba1735;
+      outline: none;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 7px;
+      &:hover {
+          background: #afafb6;
+      }
+  }
+}
+

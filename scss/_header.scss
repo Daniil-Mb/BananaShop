@@ -1,0 +1,37 @@
+.header {
+    position: fixed;  
+    z-index: 2000;
+    background-color: none;
+    top: 0px;
+    width: 100%;  
+    background-color: rgb(177, 215, 63);
+    opacity: 90%;
+    &_cap{      
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 50px;
+        color: #005FA3;
+    }
+    &__logo {
+        width: 80px;
+        height: auto;
+    }
+    &_button {
+        background: #FFF;
+        color: #0962E8;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 10px;
+        &:hover {
+            background: #e0e0e0;
+        }
+    }
+}

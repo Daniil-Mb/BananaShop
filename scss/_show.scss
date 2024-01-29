@@ -1,0 +1,41 @@
+.show {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    &_cart {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 25px;
+        background: #ffc9c9;
+        border-radius: 20px;
+        padding: 10px;
+
+    }
+    &_about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 15px;
+    }
+    &_title {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 50px;
+        color: #005FA3;
+    }
+    &_text {
+        text-align: center;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 50px;
+        color: #005FA3;
+    }
+}
